@@ -1,0 +1,64 @@
+/* TEAM MASE 
+
+char junk;
+String inputString="";
+String inChar;
+
+void setup()                    // run once, when the sketch starts
+{
+ Serial.begin(9600);            // set the baud rate to 9600, same should be of your Serial Monitor
+ pinMode(10, OUTPUT);
+ pinMode(11, OUTPUT);
+  pinMode(12, OUTPUT);
+   pinMode(13, OUTPUT);
+}
+
+void loop()
+{ 
+  if(Serial.available()){
+  while(Serial.available())
+    {
+      inChar =Serial.read()-96; //read the input
+      inputString += inChar;        //make a string of the characters coming on serial
+    }
+    Serial.println(inputString);
+    while (Serial.available() > 0)  
+    { junk = Serial.read() ; }      // clear the serial buffer
+    if(inputString == "2"){         //in case of 'a' turn the LED on"B"
+      digitalWrite(10, HIGH);
+      digitalWrite(11, HIGH); 
+      delay(3000); 
+        digitalWrite(10, 0);
+      digitalWrite(11, 0);
+    }
+    if(inputString == "6"){         //in case of 'a' turn the LED on "F"
+      digitalWrite(13, HIGH);
+      digitalWrite(12, HIGH); 
+      delay(3000); 
+        digitalWrite(13, 0);
+      digitalWrite(12, 0);
+    }
+    if(inputString == "12"){         //in case of 'a' turn the LED on"L"
+      digitalWrite(10, HIGH);
+      digitalWrite(13, HIGH); 
+      delay(3000); 
+        digitalWrite(13, 0);
+      digitalWrite(10, 0);
+    }
+    if(inputString == "18"){         //in case of 'a' turn the LED on"R"
+      digitalWrite(11, HIGH);
+      digitalWrite(12, HIGH); 
+      delay(3000); 
+        digitalWrite(11, 0);
+      digitalWrite(12, 0);
+    }
+   else{         //in case of 'a' turn the LED on "S"
+      digitalWrite(13, 0);
+      digitalWrite(12, 0); 
+      //delay(3000); 
+        digitalWrite(13, 0);
+      digitalWrite(12, 0);
+    }
+    }
+    inputString = "";
+  }

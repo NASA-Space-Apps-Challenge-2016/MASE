@@ -1,0 +1,19 @@
+
+Intro: GoMars is any revolutioning app in the field on Journey to Mars. it is an app which helps astronauts to travel or to explore on Mars.
+
+Members: This app is developed by a bunch of students. The members are ABISEKH V , AKSHAY JAYAN ,BONY CHERIAN , DON JOSE , GEORGE T KURIAN , JOEL GEORGE VARKEY , JUDE THOMAS P BOBEN . 
+
+The Challenge: Mars is an interesting environment for out-of-this-world mobility options for an explorer. This challenge asks for the definition of a conceptual mobility solution to allow an astronaut to easily and rapidly explore Mars including overcoming obstacles such as cliffs, ravines and other difficult terrain. The solution should be person-portable and any means or source of propulsion be locally produced. 
+
+Solution: the Mase is an hoverboard which could be used in mars for exploration, for demonstration purpose we are running Mase using a bluetooth derived app but later Mase can be driven by pressure sensors which will drive Mase as we lean towards the direction in which we desire to move. in the future we are planning save the terrains we are travelling so that it remains as a useful data for other astronauts.
+
+
+This is a basic app which is used to controlled "Mase" which helps astronauts to travel on Mars.
+
+The app cosist of 3 labels
+label 1; which helps the user to connect to a bluetooth module through bluetooth client. the label responds back showing if the module connection between is made by showing 'connected'
+label 2; which consist of 5 joystick buttons which helps the user to control the the Mase. the first button(up arrow) denotes the forward motion, the second botton(left arrow) commands the mase to take a left turn, third button(right arrow) commands to take a right turn, the fourth button(down arrow) commands for reverse motion, the fifth button(stop button) helps the user to stop the Mase.
+label 3; which consist the developer's name and a NASA symbol.
+
+
+
